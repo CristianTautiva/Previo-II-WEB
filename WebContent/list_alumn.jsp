@@ -17,26 +17,20 @@
 
 <table class="table">
 <tr>
-  <th>ID</th>
+  
   <th style="text-align: center;">Codigo</th>
   <th style="text-align: center;">Nombre</th>
   <th style="text-align: center;">Email</th>
-  <th style="text-align: center;">Operacion</th>
   
   
 </tr>
 
-<c:forEach var ="m" items="${aDao.listar()}">
+<c:forEach var ="a" items="${aDao.listar()}">
 
  <tr>
-  <form action="delete_alumn" method="post">
-  <td><input type="text"  style="border: 0;" id = "id" name="id" value =<c:out value="${m.id }"/>></td>
-  <td><c:out value="${m.codigo }"/></td>
-  <td><c:out value="${m.nombre }"/></td>
-  <td><c:out value="${m.email }"/></td>
-   <td><button class="btn btn-primary">Delete Alumn</button></td>
-   </form>
-   
+  <td><c:out value="${a.codigo }"/></td>
+  <td><c:out value="${a.nombre }"/></td>
+  <td><c:out value="${a.email }"/></td> 
 </tr>
 
 </c:forEach>
