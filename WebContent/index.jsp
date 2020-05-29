@@ -15,11 +15,11 @@
 <!-- Team -->
 <section id="team" class="pb-5">
     <div class="container">
-        <h5 class="section-title h1">FERIA</h5>
+        <h5 class="section-title h1">FERIA UFPS</h5>
         <div class="row  justify-content-center pb-5">
   
             <div class="col-xs-12 col-sm-6 col-md-3">
-            	<a href="list_proyects" class="btn btn-lg btn-primary btn-block text-uppercase font-weight-bold mb-2 text-light" type="submit">Listar Todos los proyectos</a>
+            	<a href="tipo_list" class="btn btn-lg btn-primary btn-block text-uppercase font-weight-bold mb-2 text-light" type="submit">Listar</a>
             </div>
 
             <div class="col-xs-12 col-sm-6 col-md-3 align-self-center">

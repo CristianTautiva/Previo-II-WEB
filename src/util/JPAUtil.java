@@ -24,11 +24,7 @@ public class JPAUtil {
 			}		
 		}
 		
-		//public List<Tienda> listar (int id){
-			
-			//EntityManager em = getEntityManagerFactory().createEntityManager();
-			//return (List<Tienda>) em.createQuery("select t from Tienda t where t.id like :ID").setParameter("ID", id).getResultList();
-		//}
+		
 	}
 
 
