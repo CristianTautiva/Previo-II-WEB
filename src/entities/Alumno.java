@@ -70,4 +70,9 @@ public class Alumno implements Serializable {
 		this.proyectos = proyectos;
 	}
 
+	@Override
+	public String toString() {
+		return "Alumno [codigo=" + codigo + ", clave=" + clave + ", email=" + email + ", nombre=" + nombre + "]";
+	}
+
 }
