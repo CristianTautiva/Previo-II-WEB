@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import dao.ProyectoDao;
+
 /**
  * Servlet implementation class list_project
  */
@@ -26,8 +28,9 @@ public class list_project extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		ProyectoDao pDao = new ProyectoDao();
+		
+		request.getRequestDispatcher("list_project.jsp").forward(request, response);
 	}
 
 	/**

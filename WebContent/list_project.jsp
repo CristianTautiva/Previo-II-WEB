@@ -6,34 +6,34 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Listando Alumnos</title>
+<title>Listando los proyectos</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
 
-<h3 class="p-4">Listado de Alumnos</h3>
+<h3 class="p-4">Listado de Proyectos</h3>
 
-<jsp:useBean id="aDao" class="dao.AlumnoDao" scope="request" />
+<jsp:useBean id="pDao" class="dao.ProyectoDao" scope="request" />
 
 <table class="table">
 <tr>
   
-  <th style="text-align: center;">Codigo</th>
   <th style="text-align: center;">Nombre</th>
-  <th style="text-align: center;">Email</th>
-  
+  <th style="text-align: center;">Resumen</th>
+  <th style="text-align: center;">Video</th>
   
 </tr>
 
-<c:forEach var ="a" items="${aDao.listar()}">
+<c:forEach var ="p" items="${pDao.listar()}">
 
  <tr>
-  <td style="text-align: center;"><c:out value="${a.codigo }"/></td>
-  <td style="text-align: center;"><c:out value="${a.nombre }"/></td>
-  <td style="text-align: center;"><c:out value="${a.email }"/></td> 
+  <td style="text-align: center;"><c:out value="${p.nombre }"/></td>
+  <td style="text-align: center;"><c:out value="${p.resumen }"/></td>
+  <td style="text-align: center;"><c:out value="${p.video }"/></td> 
 </tr>
 
 </c:forEach>
 </table>
+
 </body>
 </html>
